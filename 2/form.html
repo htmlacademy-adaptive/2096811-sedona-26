@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/2096811-sedona-26/2/">
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/svg/logo.svg" width="185px" height="96px" alt="Логотип города Седона">
+
+        <nav class="main-nav">
+          <button class="main-nav_toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">
+        Форма отзыва о туристическом городе Sedona
+      </h1>
+      <section class="intro intro--inner">
+        <img src="img/svg/sedona-catalog.svg" width="229" height="39" alt="Sedona">
+      </section>
+      <section class="feedback">
+        <div class="feedback__header">
+          <h2 class="page-article__title ">
+            Оставьте свой отзыв
+          </h2>
+          <p class="page-article__text">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="feedback__item feedback__item--name">
+            <legend class="feedback__legend">Представьтесь:</legend>
+            <label class="feedback__field field">
+              <span class="field__label">Имя*:</span>
+              <input class="field__input" type="text" name="name" placeholder="Петр" required>
+            </label>
+            <label class="feedback__field field">
+              <span class="field__label">Фамилия*:</span>
+              <input class="field__input" type="text" name="surname" placeholder="Иванов" required>
+            </label>
+            <label class="feedback__field field">
+              <span class="field__label">Отчество:</span>
+              <input class="field__input" type="text" name="patronymic" placeholder="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="feedback__item feedback__item--contacts">
+            <legend class="feedback__legend feedback__legend--line">
+              <span>Контактная информация:</span>
+            </legend>
+            <div class="feedback__contacts-wrapper">
+              <label class="feedback__field field field--contacts">
+                <span class="field__label"><span class="field__label-word">Контактный</span> телефон*:</span>
+                <span class="field__icon-wrapper field__icon-wrapper--phone">
+                  <input class="field__input" type="tel" name="phone" placeholder="Введите телефон" required>
+                </span>
+              </label>
+              <label class="feedback__field field field--contacts">
+                <span class="field__label">Электронная&nbsp;почта*:</span>
+                <span class="field__icon-wrapper field__icon-wrapper--email">
+                  <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__item feedback__item--impression">
+            <legend class="feedback__legend">
+              Ваше общее впечатление:
+            </legend>
+            <label class="feedback__field radio-button">
+              <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>
+              <span class="radio-button__label">Скорее положительное</span>
+            </label>
+            <label class="feedback__field radio-button">
+              <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">
+              <span class="radio-button__label">Скорее отрицательное</span>
+            </label>
+            <label class="feedback__field radio-button">
+              <input class="radio-button__input visually-hidden" type="radio" name="impression" value="difficult">
+              <span class="radio-button__label">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+          <fieldset class="feedback__item feedback__item--visited">
+            <legend class="feedback__legend feedback__legend--line">
+              <span>Посещенные<br> достопримечательности:</span>
+            </legend>
+            <div class="feedback__checkbox-wrapper">
+              <label class="feedback__field checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
+                <span class="checkbox__label">Мост Дьявола</span>
+              </label>
+              <label class="feedback__field checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
+                <span class="checkbox__label">Гора-Колокол</span>
+              </label>
+              <label class="feedback__field checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
+                <span class="checkbox__label">Слайд-парк</span>
+              </label>
+              <label class="feedback__field checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
+                <span class="checkbox__label">Красные&nbsp;скалы</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback__item feedback__item--emotions">
+            <legend class="feedback__legend feedback__legend--line">
+              <span>Опишите свои эмоции:</span>
+            </legend>
+            <label class="feedback__field field">
+              <textarea class="field__input field__input--textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </fieldset>
+          <div class="feedback__item feedback__item--bottom">
+            <button class="feedback__submit button button--form" type="submit">Отправить отзыв</button>
+            <div class="feedback__note">* — обязательные поля</div>
+          </div>
+        </form>
+      </section>
+      </main>
+      <footer class="footer">
+        <p class="page-footer__insta">
+          #visitSEDONA
+        </p>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">
+                Мы в Твиттере
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">
+                Мы в Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">
+                Мы в Ютубе
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__developing">
+          <span class="developing__text">
+            Разработано
+          </span>
+          <a class="developing__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Лого Htmlacademy</span>
+            <img src="img/svg/footer-logo.svg" width="27" height="35">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>
