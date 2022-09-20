@@ -1,0 +1,89 @@
+.intro {
+  position: relative;
+}
+
+.intro__welcome {
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  background-color: #8ea8c5;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__description {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 45px;
+
+  text-align: center;
+}
+
+.intro-title {
+  margin-bottom: 28px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.intro--page .intro__description {
+  padding: 80px 128px 41px;
+
+  border: none;
+}
+
+.intro--page .intro__bg {
+  padding-top: 102%;
+  padding-bottom: 121px;
+
+  background-size: contain, cover;
+}
+
+.intro__bg img {
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+}
+
+.intro__bg {
+  background-image: url(../img/svg/text-sedona.svg),
+    url(../img/back-desktop@2x.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro--page img {
+  height: 78px;
+}
+
+img {
+  max-width: 100%;
+
+  border-style: none;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+div {
+  display: block;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+}

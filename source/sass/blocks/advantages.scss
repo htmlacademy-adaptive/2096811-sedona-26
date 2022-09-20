@@ -1,0 +1,128 @@
+.advantages {
+  position: relative;
+}
+
+.advantages__list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item:not(.advantages__item--full)::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  display: none;
+  height: 1px;
+
+  background-color: #d6d6d6;
+}
+
+.advantages__item--full {
+  grid-column: 1/-1;
+}
+
+.advantages__wrapper--full {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr;
+}
+
+.advantages__wrapper {
+  flex-direction: column;
+}
+
+.advantages__container {
+  height: 100%;
+  min-height: 256px;
+  padding: 22px 38px 24px;
+  padding-top: 43px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.advantages__title {
+  max-width: 175px;
+  margin: 0 auto 12px;
+
+  line-height: 26px;
+}
+
+.advantages__img {
+  -webkit-box-direction: normal;
+  width: 100%;
+  height: 256px;
+}
+
+.advantages__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+
+  border-style: none;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.advantages__item--full:nth-child(2n) .advantages__img {
+  order: -1;
+}
+
+.advantages__item--full:nth-child(2n) .advantages__wrapper--full {
+  grid-template-columns: 2fr 1fr;
+}
+
+.advantages__recommendation {
+  display: grid;
+  padding-bottom: 0;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages__recommendation-item--motel {
+  padding: 158px 70px 82px;
+
+  background-image: url(../img/svg/icon-house.svg);
+  background-position: center 61px;
+  background-size: 75px 72px;
+}
+
+.advantages__recommendation-item {
+  min-height: 256px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-repeat: no-repeat;
+}
+
+.advantages__recommendation-item--food {
+  padding: 158px 50px 82px;
+
+  background-image: url(../img/svg/icon-burger.svg);
+  background-position: center 61px;
+  background-size: 75px 72px;
+}
+
+.advantages__recommendation-item--souvenirs {
+  padding: 158px 70px 82px;
+
+  background-image: url(../img/svg/icon-gift.svg);
+  background-position: center 61px;
+  background-size: 64px 72px;
+}

@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 35px 120px 34px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__insta {
+  display: inline-block;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+}
