@@ -1,0 +1,280 @@
+.form {
+  padding: 2px 120px 40px;
+}
+
+section {
+  display: block;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+.form__wrapper-fieldset {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form__wrapper-fieldset::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 0;
+  left: 51.4%;
+
+  width: 1px;
+
+  background-color: #dbdbdb;
+  transform: translateX(-50%);
+}
+
+.form__wrapper-fieldset .form__fieldset {
+  padding-top: 39px;
+}
+
+.form__fieldset {
+  position: relative;
+
+  margin: 0;
+  padding: 45px 0 0;
+
+  border: none;
+}
+
+fieldset {
+  display: block;
+
+  margin-inline-end: 2px;
+  margin-inline-start: 2px;
+  min-inline-size: min-content;
+  padding-block-end: 0.625em;
+  padding-block-start: 0.35em;
+  padding-inline-end: 0.75em;
+  padding-inline-start: 0.75em;
+}
+
+.form__wrapper-fieldset .form__fieldset-title {
+  padding-left: 12px;
+}
+
+.form__fieldset-title {
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+
+  font-weight: bold;
+
+  margin-block-end: 0.83em;
+  margin-block-start: 0.83em;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
+
+.form__fieldset--data .form__contact-list {
+  padding-right: 50px;
+}
+
+ul {
+  display: block;
+
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 40px;
+}
+
+.form__contact-item {
+  margin-bottom: 16px;
+}
+
+li {
+  display: list-item;
+
+  text-align: -webkit-match-parent;
+}
+
+.form__contact-label {
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+label {
+  cursor: default;
+}
+
+.form__contact-input {
+  width: 100%;
+  height: 58px;
+  padding-left: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center right -4px;
+  border: 4px solid transparent;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+input {
+  display: inline-block;
+
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: inherit;
+  text-align: start;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0;
+  text-shadow: none;
+
+  cursor: text;
+
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  text-rendering: auto;
+  writing-mode: horizontal-tb !important;
+}
+
+.form__fieldset--feedback {
+  padding-top: 53px;
+  padding-bottom: 13px;
+}
+
+.form__fieldset-title--lines {
+  overflow: hidden;
+}
+
+.form__options {
+  display: grid;
+  padding: 16px 54px;
+
+  gap: 16px 62px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.form__options-item:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+input[type="radio" i] {
+  background-color: initial;
+  cursor: default;
+}
+
+.form__options-label {
+  position: relative;
+
+  display: block;
+  min-height: 46px;
+  padding: 10px 0 10px 62px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__fieldset--attractions {
+  padding-bottom: 36px;
+}
+
+.form__fieldset--recall {
+  padding-top: 17px;
+  padding-bottom: 25px;
+}
+
+.form__feedback {
+  display: block;
+  width: 770px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 15px 12px 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 4px solid transparent;
+
+  resize: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.form__fieldset--submit {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  padding: 22px 96px 33px;
+}
